@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Staybnb - Find Your Next Stay</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;600&family=Urbanist:wght@400;600&display=swap" rel="stylesheet">
+  <script defer src="scripts/main.js"></script>
+</head>
+<body>
+  <header class="navbar" role="banner">
+    <div class="logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Airbnb_Logo_Bélo.svg" alt="Staybnb logo">
+      Staybnb
+    </div>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="listings.html">Listings</a>
+      <a href="host-dashboard.html">Host Dashboard</a>
+      <a href="booking.html">Book a Stay</a>
+    </nav>
+    <button class="hamburger" aria-label="Open navigation menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+  <section class="search-bar" aria-label="Property search">
+    <input type="text" id="search-input" placeholder="Where | Search destinations" aria-label="Search destinations">
+    <input type="date" id="checkin-search" placeholder="Check in" aria-label="Check in">
+    <input type="date" id="checkout-search" placeholder="Check out" aria-label="Check out">
+    <input type="number" id="guests-search" min="1" max="10" placeholder="Who | Add guests" aria-label="Add guests">
+    <button id="search-btn" aria-label="Search">🔍</button>
+  </section>
+  <div style="height: 1px; background: var(--color-border); margin: 0 auto 2.5rem auto; max-width: 900px;"></div>
+  <main>
+    <h1 class="visually-hidden">Staybnb: Find Your Next Stay</h1>
+    <div class="container">
+      <section class="hero">
+        <h2>Find your next adventure</h2>
+        <p>Book unique homes and experiences around the world.</p>
+        <a href="listings.html" class="cta-btn">Browse Listings</a>
+      </section>
+      <section class="featured-listings" id="featured-listings">
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.2rem;">
+          <h2 style="margin: 0;">Popular homes <span aria-hidden="true" style="font-size:1.3em; color:var(--color-accent);">&#8594;</span></h2>
+        </div>
+        <div class="listings-grid"><!-- JS will inject cards here --></div>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2024 Staybnb. Inspired by Airbnb.</p>
+    <div style="margin-top: 0.7em;">
+      <a href="#" aria-label="Instagram" style="margin:0 0.5em; color:var(--color-accent); text-decoration:none; font-size:1.3em;">&#x1F4F7;</a>
+      <a href="#" aria-label="Twitter" style="margin:0 0.5em; color:var(--color-accent); text-decoration:none; font-size:1.3em;">&#x1F426;</a>
+      <a href="#" aria-label="Facebook" style="margin:0 0.5em; color:var(--color-accent); text-decoration:none; font-size:1.3em;">&#x1F4F1;</a>
+    </div>
+  </footer>
+  <style>.visually-hidden{position:absolute!important;height:1px;width:1px;overflow:hidden;clip:rect(1px,1px,1px,1px);white-space:nowrap;}</style>
+</body>
+</html> 

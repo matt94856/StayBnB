@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Staybnb Listings</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;600&family=Urbanist:wght@400;600&display=swap" rel="stylesheet">
+  <script defer src="scripts/main.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">Staybnb</div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="listings.html">Listings</a>
+      <a href="host-dashboard.html">Host Dashboard</a>
+      <a href="booking.html">Book a Stay</a>
+    </nav>
+    <button class="hamburger" aria-label="Open navigation menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+  <main>
+    <section class="search-bar">
+      <input type="text" id="search-input" placeholder="Search by city, property, etc...">
+      <select id="price-filter">
+        <option value="">Price Range</option>
+        <option value="1">$</option>
+        <option value="2">$$</option>
+        <option value="3">$$$</option>
+      </select>
+      <select id="guest-filter">
+        <option value="">Guests</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3+</option>
+      </select>
+      <button id="search-btn">Search</button>
+    </section>
+    <section class="all-listings">
+      <h2>All Listings</h2>
+      <div class="listings-grid" id="all-listings-grid"><!-- JS will inject cards here --></div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Staybnb. Inspired by Airbnb.</p>
+  </footer>
+</body>
+</html> 

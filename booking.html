@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Stay - Staybnb</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;600&family=Urbanist:wght@400;600&display=swap" rel="stylesheet">
+  <script defer src="scripts/main.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">Staybnb</div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="listings.html">Listings</a>
+      <a href="host-dashboard.html">Host Dashboard</a>
+      <a href="booking.html">Book a Stay</a>
+    </nav>
+    <button class="hamburger" aria-label="Open navigation menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+  <main>
+    <section class="booking-form-section">
+      <h2>Book Your Stay</h2>
+      <form id="booking-form">
+        <label for="property">Property</label>
+        <select id="property" name="property"></select>
+        <label for="checkin">Check-in</label>
+        <input type="date" id="checkin" name="checkin" required>
+        <label for="checkout">Check-out</label>
+        <input type="date" id="checkout" name="checkout" required>
+        <label for="guests">Guests</label>
+        <input type="number" id="guests" name="guests" min="1" max="10" value="1" required>
+        <div class="estimated-total">
+          Estimated Total: <span id="estimated-total">$0</span>
+        </div>
+        <button type="submit" class="cta-btn">Book Now</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Staybnb. Inspired by Airbnb.</p>
+  </footer>
+</body>
+</html> 

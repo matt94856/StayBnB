@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Host Dashboard - Staybnb</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;600&family=Urbanist:wght@400;600&display=swap" rel="stylesheet">
+  <script defer src="scripts/main.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">Staybnb</div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="listings.html">Listings</a>
+      <a href="host-dashboard.html">Host Dashboard</a>
+      <a href="booking.html">Book a Stay</a>
+    </nav>
+    <button class="hamburger" aria-label="Open navigation menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+  <main>
+    <section class="dashboard">
+      <h2>Host Dashboard</h2>
+      <div class="dashboard-panel" data-panel="properties">
+        <button class="panel-toggle">My Properties</button>
+        <div class="panel-content">
+          <form id="add-property-form">
+            <label for="property-name">Property Name</label>
+            <input type="text" id="property-name" name="property-name" required>
+            <label for="property-location">Location</label>
+            <input type="text" id="property-location" name="property-location" required>
+            <label for="property-price">Price per Night ($)</label>
+            <input type="number" id="property-price" name="property-price" min="1" required>
+            <button type="submit">Add Property</button>
+          </form>
+          <div id="host-properties-list"><!-- JS will inject host properties here --></div>
+        </div>
+      </div>
+      <div class="dashboard-panel" data-panel="bookings">
+        <button class="panel-toggle">Bookings</button>
+        <div class="panel-content">
+          <p>No bookings yet. (Mock data will appear here.)</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Staybnb. Inspired by Airbnb.</p>
+  </footer>
+</body>
+</html> 
